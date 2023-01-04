@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<script>
+     function check(p,q,r){
+        if(p>=q  && p>=r){
+            return p;
+        }else if(q>=p && q>=r){
+            return q;
+        }else{
+            return r;
+        }
+     }
+    var a = prompt("Please enter the first Number");
+    var b = prompt("Please enter the Second Number");
+    var c = prompt("Please enter the Thrid Number");
+    // var x = Math.max(a,b,c);
+    var x =check(a,b,c);
+   
+   
+    console.log(`${a},${b},${c}: Largest = ${x}`);
+</script>
+<body>
+    
+</body>
+</html>

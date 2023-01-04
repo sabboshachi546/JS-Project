@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inbuilt Function</title>
+</head>
+<script>
+    var string = prompt("Please enter a string:");
+    var testStrat = string.startsWith('w');
+    var testEnd = string.endsWith('e');
+    // console.log(`Starts : ${testStrat}`);
+    // console.log(`End : ${testEnd}`);
+    if(testStrat == true && testEnd == true){
+        console.log(` ${string} strat with w and end with e`);
+    }else if(testStrat == true && testEnd == false){
+        console.log(` ${string} strat with w`);
+    }else if(testStrat == false && testEnd == true){
+        console.log(` ${string} end with e`);
+    }else{
+        console.log(` ${string} neither start with w and nor end with e`);
+    }
+</script>
+<body>
+    
+</body>
+</html>

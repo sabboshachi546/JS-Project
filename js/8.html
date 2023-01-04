@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrucuring Array</title>
+</head>
+<body>
+    <script>
+        // let user = ["Shuvo Mohanto", 605, "Rangpur"];
+        // let [name , ...args] = user;
+        // console.log(name);
+        // console.log(args);
+
+        //Example 2
+        // function user([name, age, city]){
+        //     console.log(name);
+        // console.log(age);
+        // console.log(city);
+        // };
+        //  user(["Shuvo Mohanto", 605, "Rangpur"]);
+
+        //Example3
+        function user(){
+            return ["Shuvo Mohanto", 605, "Rangpur"]
+        };
+        let [name, year , city] = user();
+         console.log(name);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Check</title>
+</head>
+<script>
+function check(){
+    var value = document.getElementById('data').value;
+    // var res = Math.sign(value);
+    if(value > 0){
+        res =`${value} is Positive Number`;
+    }else if(value < 0){
+        res =`${value} is Neagtive Number`;
+    }else if(value == 0){
+        res =`${value} is Zero`;
+    }else{
+        res =`${value} is Not a Number`;
+    }
+    document.getElementById('res').innerText = res
+}
+</script>
+<body>
+    <input type="" id="data">
+    <br/>
+    <button onclick="check()">Cehck</button>
+    <h1 id="res"></h1>
+</body>
+</html>

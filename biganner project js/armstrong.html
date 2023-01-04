@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number</title>
+</head>
+<script>
+    var number = prompt('Please enter a number');
+    var temp = number ;
+    var nuOfDigit = number.toString().length;
+    var sum = 0;
+    while(temp>0){
+        // console.log(temp);
+        var digit = temp%10;
+        // console.log(digit);
+        sum += digit**nuOfDigit;
+        // console.log(sum);
+        temp = parseInt(temp/10);
+        // console.log(temp);
+        // console.log('-----')
+    }
+    if(sum == number){
+        console.log(`${number} is an amrstrong number`);
+    }else{
+        console.log(`${number} is not an amrstrong number`);
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Calculator</title>
+</head>
+<script>
+    var num1 = prompt("Please Enter 1st Number");
+    var num2 = prompt("Please Enter 2st Number");
+    var opr = prompt("Please enter among +,-,x,/");
+    switch(opr){
+        case '+':
+            var res = parseFloat( num1) +parseFloat( num2);
+            console.log(`${num1} + ${num2} = ${res}`);
+            break;
+            case '-':
+            var res = parseFloat( num1) - parseFloat( num2);
+            console.log(`${num1} - ${num2} = ${res}`);
+            break;
+            case '*':
+            var res = parseFloat( num1) * parseFloat( num2);
+            console.log(`${num1} * ${num2} = ${res}`);
+            break;
+            case '/':
+            var res = parseFloat( num1) /parseFloat( num2);
+            console.log(`${num1} / ${num2} = ${res}`);
+            break;
+        default:
+            console.log('Invalid Operator')
+    }
+</script>
+<body>
+    
+</body>
+</html>
